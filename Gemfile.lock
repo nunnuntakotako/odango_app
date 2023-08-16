@@ -1,8 +1,23 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    activemodel (7.0.7)
+      activesupport (= 7.0.7)
+    activerecord (7.0.7)
+      activemodel (= 7.0.7)
+      activesupport (= 7.0.7)
+    activesupport (7.0.7)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+    concurrent-ruby (1.2.2)
+    i18n (1.14.1)
+      concurrent-ruby (~> 1.0)
+    minitest (5.19.0)
     mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
+    mysql3 (0.5.4)
     nio4r (2.5.9)
     puma (6.3.0)
       nio4r (~> 2.0)
@@ -15,14 +30,22 @@ GEM
       rack (~> 2.2, >= 2.2.4)
       rack-protection (= 3.1.0)
       tilt (~> 2.0)
+    sinatra-activerecord (2.0.26)
+      activerecord (>= 4.1)
+      sinatra (>= 1.0)
     tilt (2.2.0)
+    tzinfo (2.0.6)
+      concurrent-ruby (~> 1.0)
 
 PLATFORMS
   arm64-darwin-21
 
 DEPENDENCIES
+  activerecord
+  mysql3
   puma
   sinatra (~> 3.1)
+  sinatra-activerecord
 
 BUNDLED WITH
    2.3.7
