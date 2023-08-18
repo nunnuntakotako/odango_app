@@ -2,6 +2,7 @@ require 'sinatra'
 require 'sinatra/reloader'
 require 'active_record'
 
+
 get '/' do
   'hello'
 end
