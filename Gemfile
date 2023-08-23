@@ -6,3 +6,6 @@ source "https://rubygems.org"
 
 gem "sinatra", "~> 3.1"
 gem 'puma'
+gem 'sqlite3'
+gem 'rake'
+gem "sinatra-activerecord"
